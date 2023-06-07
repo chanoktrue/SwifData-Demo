@@ -41,6 +41,7 @@ struct BookListView: View {
                     Image(systemName: book.readed ? "checkmark" : "xmark")
                 }
             }
+            .onDelete(perform: deleteBook)
         }
     }
     
